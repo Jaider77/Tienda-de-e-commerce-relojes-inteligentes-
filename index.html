@@ -1,0 +1,58 @@
+<!-- index.html -->
+<!-- Jaider Francisco Asprilla Reyes -->
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda de Relojes Jf</title>
+    <link rel="icono" href="productos/logo.jpg" type="icono de la tienda">
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+
+    <header>
+        <h1>Tienda de Relojes Jf</h1>
+        <h2>Bienvenidos a la mejr tienda de relojes inteligentes "JF" escoje y llevate el que mas te guste.</h2>
+    </header>
+
+    <main>
+        <!-- Productos aquí -->
+        <div class="producto" id="producto1">
+            <div class="item">
+                <img src="productos/p0.jpeg" alt="Reloj  jf1">
+                <h2>Reloj jf1</h2>
+                <p>Precio: $100.00</p>
+                <button onclick="agregarAlCarrito('producto1', 'Reloj jf1', 100.00)">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <img src="productos/p4.png" alt="Reloj jf2">
+                <h2>Reloj jf2</h2>
+                <p>Precio: $75.00</p>
+                <button onclick="agregarAlCarrito('producto2', 'Reloj jf2', 75.00)">Agregar al Carrito</button>
+            </div>
+            <div class="item">
+                <img src="productos/apple.jpeg" alt="Reloj jf3">
+                <h2>Reloj jf3</h2>
+                <p>Precio: $50.00</p>
+                <button onclick="agregarAlCarrito('producto3', 'Reloj jf3', 50.00)">Agregar al Carrito</button>
+            </div>
+        </div>
+        <!-- Carrito de Compras -->
+<div id="carrito">
+    <img src="productos/carrito.png" alt="Carrito de Compras">
+    <h2>Carrito</h2>
+    <ul id="listaCarrito"></ul>
+    <p>Total: $<span id="totalCarrito">0.00</span></p>
+    <button onclick="comprar()">Comprar</button>
+    <button class="boton-vaciar" onclick="vaciarCarrito()">Vaciar Carrito</button>
+</div>
+    </main>
+    <footer>
+        <p>&copy; Tienda de Relojes jf creada por Jader Francisco Asprilla Reyes </p>
+        <p>11/11/2023</p>
+    </footer>
+
+    <script src="index.js"></script>
+</body>
+</html>
